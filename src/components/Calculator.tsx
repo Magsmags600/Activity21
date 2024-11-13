@@ -4,7 +4,6 @@ interface CalculatorState {
   total: number;
   previousTotal: number;
 }
-
 export default function Calculator() {
   const [calcState, setCalcState] = useState<CalculatorState>({ total: 0, previousTotal: 0 });
   const [value, setValue] = useState(0);
@@ -12,22 +11,6 @@ export default function Calculator() {
   const handleAddClick = () => {
     setCalcState({ total: calcState.total + value, previousTotal: calcState.total});
   };
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  
 
   return (
     <div className="calculator">
